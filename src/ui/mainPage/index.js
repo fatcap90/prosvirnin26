@@ -1,15 +1,16 @@
 import React from "react";
 
 import "./styles.css";
+import image from "assets/img/jpg/process.jpeg"
 
-function MainPage() {
+const MainPage = props => {
   return (
     <div className="container pt-4">
       <div className="row">
         <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <div className="card">
             <img
-              src="assets/img/jpg/process.jpeg"
+              src={image}
               className="card-img-top"
               alt="element image"
             />
@@ -30,7 +31,7 @@ function MainPage() {
         <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <div className="card">
             <img
-              src="assets/img/jpg/process.jpeg"
+              src={image}
               className="card-img-top"
               alt="element image"
             />
@@ -51,7 +52,7 @@ function MainPage() {
         <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <div className="card">
             <img
-              src="assets/img/jpg/process.jpeg"
+              src={image}
               className="card-img-top"
               alt="element image"
             />
@@ -72,7 +73,7 @@ function MainPage() {
         <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <div className="card">
             <img
-              src="assets/img/jpg/process.jpeg"
+              src={image}
               className="card-img-top"
               alt="element image"
             />
@@ -93,7 +94,7 @@ function MainPage() {
         <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <div className="card">
             <img
-              src="assets/img/jpg/process.jpeg"
+              src={image}
               className="card-img-top"
               alt="element image"
             />

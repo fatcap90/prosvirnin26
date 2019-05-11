@@ -1,13 +1,17 @@
 import React from 'react';
+import {Link, NavLink} from "react-router-dom";
+
 
 import './styles.css';
 
 function Header() {
     return (
         <div className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand" href="/">
-                MotoBase
-            </a>
+            <Link to='/'>
+                <a className="navbar-brand" href="/">
+                    MotoBase
+                </a>
+            </Link>
 
             <button
                 className="navbar-toggler"
@@ -24,27 +28,25 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a href="/category1" className="nav-link">
+                        <NavLink to="/category1" className="nav-link">
                             Мотоциклы
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <a href="/category2" className="nav-link">
+                        <NavLink to="/category2" className="nav-link">
                             Мопеды
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </div>
-
-            <a href="/login">
-                <button className="btn btn-dark my-2 my-sm-0" type="submit">
-                    Личный кабинет
-                </button>
-            </a>
+            <Link to='/lk'>
+                <a href="/lk">
+                    <button className="btn btn-dark my-2 my-sm-0" type="submit">
+                        Личный кабинет
+                    </button>
+                </a>
+            </Link>
         </div>
-
-
-
     );
 
 
